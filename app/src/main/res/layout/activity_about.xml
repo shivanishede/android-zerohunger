@@ -1,0 +1,229 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- FrameLayout to overlay text on the image -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/zeroHungerText"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/carousel1"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/textOverlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About Us"
+                        android:textSize="30sp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <!-- ZeroHunger TextView -->
+                <TextView
+                    android:id="@+id/zeroHungerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="36sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="16dp" />
+            </RelativeLayout>
+
+            <!-- LinearLayout for Cards (Horizontal layout) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center">
+
+                <!-- Card 1 -->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Care"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="116dp"
+                            android:layout_height="140dp"
+                            android:text="Help minimize food wastage across the supply chain by means of redistribution to poor and needy." />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 2 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="118dp"
+                        android:layout_height="202dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Aware"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="83dp"
+                            android:layout_height="138dp"
+                            android:text="Mobilize people to minimize their food wastage through widespread awareness programs." />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card 3 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="132dp"
+                        android:layout_height="199dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Share"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="106dp"
+                            android:layout_height="144dp"
+                            android:text="Facilitate safe distribution of surplus food by connecting trained food recovery agencies with food chains." />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                android:layout_marginTop="10dp"
+                android:textColor="@color/green"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+            <TextView
+                android:id="@+id/additionalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SAVE FOOD AND SHARE FOOD"
+                android:textSize="14sp"
+                android:layout_below="@id/about"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Paragraph TextView -->
+            <TextView
+                android:id="@+id/paragraph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" About 15 percent of India is undernourished. This statistic may not initially seem significant, but 15% of 1.34 billion people is roughly 199 million people. To put this in perspective, 199 million people is more than half of the United States. Currently, organizations such as the Fight Hunger Foundation have begun to battle the issue, but it remains prevalent. One-third of food gets lost or wasted. According to the Indian Food Bank, 40 percent of vegetables and 30 percent of cereals produced are lost due to inefficiencies in the supply chain. New agricultural methods and the overall industrialization of India have sought to increase efficiency. Women account for 60 percent of India’s hungry population. For the last 65 years, CARE India has emerged as a leader in addressing the issue of hunger in developing areas by focusing on women’s health, education, and access to necessities. The NGO has impacted 24.1 million people directly and 85.8 million indirectly. 3,000 children die every day from hunger. Those that survive have a high chance of living with hardships in the future. Organizations like Save the Children have turned to India to help decrease this number through aid in the form of food, hygiene, and education."
+                android:textSize="13sp"
+                android:layout_below="@id/additionalInfo"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <WebView
+                android:id="@+id/videoWebView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/paragraph"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                tools:ignore="WebViewUsesCleartextTraffic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>

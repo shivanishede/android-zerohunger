@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonarActivity">
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/zeroHungerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:text="Donar Information"
+                android:textSize="36sp" />
+            <!-- CardView for encapsulating the form -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+               android:layout_below="@+id/zeroHungerText"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="24dp"
+                    android:background="@drawable/custom_edittext">
+
+                    <!-- ZeroHunger TextView -->
+
+                    <!-- Name EditText -->
+
+
+                    <EditText
+                        android:id="@+id/nameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter your name"
+                        android:inputType="textPersonName"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/baseline_person_24"
+                        android:drawablePadding="8dp"
+                        android:layout_marginBottom="20dp" />
+
+                    <!-- Mobile Number EditText -->
+                    <EditText
+                        android:id="@+id/phoneEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter your mobile number"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/baseline_person_24"
+                        android:drawablePadding="8dp"
+                        android:layout_marginBottom="20dp" />
+
+                    <!-- Quantity and Email in a horizontal LinearLayout -->
+                    <LinearLayout
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginBottom="20dp">
+
+                        <!-- Quantity EditText (only numbers) -->
+                        <EditText
+                            android:id="@+id/quantityEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:hint="Quantity"
+                            android:inputType="number"
+                            android:padding="8dp"
+                            android:textColor="@color/black"
+                            android:drawableLeft="@drawable/baseline_person_24"
+                            android:drawablePadding="8dp" />
+
+                        <!-- Email EditText -->
+                        <EditText
+                            android:id="@+id/emailEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:hint="Email ID"
+                            android:inputType="textEmailAddress"
+                            android:padding="8dp"
+                            android:textColor="@color/black"
+                            android:drawableLeft="@drawable/baseline_person_24"
+                            android:drawablePadding="8dp" />
+
+                    </LinearLayout>
+
+                    <!-- Address EditText -->
+                    <EditText
+                        android:id="@+id/addressEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter your address"
+                        android:inputType="textPersonName"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/baseline_person_24"
+                        android:drawablePadding="8dp"
+                        android:layout_marginBottom="20dp" />
+
+                    <!-- Pincode EditText -->
+                    <EditText
+                        android:id="@+id/pinEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter your pincode"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:drawableLeft="@drawable/baseline_person_24"
+                        android:drawablePadding="8dp"
+                        android:layout_marginBottom="20dp" />
+
+                    <!-- Date and Expiry Date in a horizontal LinearLayout -->
+                    <LinearLayout
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_marginBottom="20dp">
+
+                        <!-- Date EditText -->
+                        <EditText
+                            android:id="@+id/dateEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:hint="Date"
+                            android:inputType="date"
+                            android:padding="8dp"
+                            android:textColor="@color/black"
+                            android:focusable="false" />
+
+                        <!-- Expiry Date EditText -->
+                        <EditText
+                            android:id="@+id/expiryDateEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:hint="Expiry Date"
+                            android:inputType="date"
+                            android:padding="8dp"
+                            android:textColor="@color/black"
+                            android:focusable="false" />
+
+                    </LinearLayout>
+
+                    <!-- Submit Button -->
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="Submit"
+                        android:id="@+id/saveButton"
+                        android:textSize="18sp"
+                        android:backgroundTint="@color/green"
+                        app:cornerRadius="20dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/viewInformationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="View Information"
+                android:layout_below="@id/cardview"
+                android:layout_alignParentEnd="true"
+                android:textSize="18sp"
+                android:backgroundTint="@color/orange"
+                app:cornerRadius="20dp" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottomNavigation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:background="@drawable/bottom_background"-->
+<!--        android:elevation="2dp"-->
+<!--        app:itemIconSize="30dp"-->
+<!--        app:itemIconTint="@drawable/item_selector"-->
+<!--        app:itemRippleColor="@android:color/transparent"-->
+<!--        app:labelVisibilityMode="unlabeled"-->
+<!--        app:menu="@menu/menu" />-->
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "998884437696",
+    "firebase_url": "https://zerohunger-eb98a-default-rtdb.firebaseio.com",
+    "project_id": "zerohunger-eb98a",
+    "storage_bucket": "zerohunger-eb98a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998884437696:android:fb80e4575d4914507dc725",
+        "android_client_info": {
+          "package_name": "com.example.zerohunger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTrXhBS-4fZaYSj_7bjvrK_NusP6hKmpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
